@@ -17,6 +17,13 @@ public class DivisionHead implements FillingSugar {
         this.multiplyResult = multiplyResult;
     }
 
+    public DivisionHead(int dividend, int divisor, int result, int multiplyResult) {
+        this.dividend = String.valueOf(dividend);
+        this.divisor = String.valueOf(divisor);
+        this.result = String.valueOf(result);
+        this.multiplyResult = String.valueOf(multiplyResult);
+    }
+
     @Override
     public String toString() {
         return String.format(

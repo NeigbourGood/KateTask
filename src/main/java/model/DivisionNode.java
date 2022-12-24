@@ -46,7 +46,7 @@ public class DivisionNode implements FillingSugar {
     }
 
     private String makeMove(int k, boolean isInternal) {
-        int moveCount = isInternal ? k : k + globalMoveK;
+        int moveCount = isInternal ? k : globalMoveK;
         return makeCharacterString(moveCount, ' ');
     }
 
